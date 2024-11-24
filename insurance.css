@@ -376,3 +376,41 @@
       color: #ffcc00 !important;
       /* Change to a golden color on hover */
   }
+  
+  #about {
+      margin-top: 50px;
+  }
+  /* Ensure these styles are loaded properly and no conflicts */
+  /* Hover Effect for Title */
+  
+  .about-title {
+      color: #007bff !important;
+      /* Blue color on hover */
+  }
+  
+  .about-title:hover {
+      color: #59718b !important;
+      /* Blue color on hover */
+      transition: color 0.3s ease-in-out;
+      /* Smooth transition for color change */
+  }
+  /* Hover Effect for Description */
+  
+  .about-description:hover {
+      color: #555 !important;
+      /* Darker color on hover */
+      transform: translateY(-5px);
+      /* Slight upward movement on hover */
+      transition: color 0.3s ease, transform 0.3s ease;
+      /* Smooth transition for color and movement */
+  }
+  /* Hover Effect for Image */
+  
+  .hover-effect:hover {
+      transform: scale(1.05);
+      /* Zoom effect */
+      box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
+      /* Blue shadow */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      /* Smooth transition for zoom and shadow */
+  }

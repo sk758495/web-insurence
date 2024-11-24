@@ -7,8 +7,13 @@
     <title>Insurance Advisor</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="insurance.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
 
 <body>
@@ -49,8 +54,36 @@
         <div>
             <a href="#contact" class="cta-btn">Get Your Free Consultation</a>
         </div>
-
     </div>
+
+
+
+    <!-- Section to display Image on the right and Title on the left -->
+    <div id="about" class="about-section py-5" style="background-color: #f7f7f7;">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Side - Title and Small Title with new animation effect -->
+                <div class="col-lg-6 col-md-6 col-sm-12" data-aos="zoom-in-up" data-aos-delay="100">
+                    <h6 class="display-5 fw-bold text-dark mb-3 about-title" style="font-size: 2.5rem;">The Importance of Insurance for Your Future</h6>
+                    <p class="lead text-muted about-description" style="font-size: 1.1rem; line-height: 1.8;">
+                        Insurance is essential for protecting your loved ones and securing your financial future. Whether it's life, health, or retirement planning, LIC offers reliable solutions to help you manage risks and stay prepared for life’s uncertainties. Protect what
+                        matters most today, for a safer tomorrow.
+                    </p>
+                </div>
+                <!-- Right Side - Image with zoom-in effect -->
+                <div class="col-lg-6 col-md-6 col-sm-12" data-aos="zoom-in-left" data-aos-delay="200">
+                    <img src="images/banner1.png" alt="Explore Services" class="img-fluid rounded-lg shadow-lg hover-effect" style="max-height: 400px; object-fit: cover; border: 3px solid #e3e3e3;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hover Effect CSS -->
+    <style>
+
+    </style>
+
+
 
     <!-- Services Section -->
     <div id="services" class="services">
@@ -108,6 +141,38 @@
             mirror: false, // No mirror animation
         });
     </script>
+
+    <style>
+        /* Hover Effect for Title */
+        
+        .about-title:hover {
+            color: #007bff;
+            /* Change text color on hover */
+            transition: color 0.3s ease-in-out;
+            /* Smooth transition for color change */
+        }
+        /* Hover Effect for Description */
+        
+        .about-description:hover {
+            color: #555;
+            /* Slightly darker text color on hover */
+            transform: translateY(-5px);
+            /* Text moves up slightly */
+            transition: color 0.3s ease, transform 0.3s ease;
+            /* Smooth transition for color and movement */
+        }
+        /* Hover Effect for Image */
+        
+        .hover-effect:hover {
+            transform: scale(1.05);
+            /* Zoom in the image slightly */
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
+            /* Add a blue shadow on hover */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            /* Smooth transition for zoom and shadow */
+        }
+    </style>
+
 
     <script>
         // Typewriter Effect for "Insurance" Text
