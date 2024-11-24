@@ -223,6 +223,9 @@
           margin-bottom: 50px;
           /* Space below heading */
       }
+      #services-row {
+          display: block;
+      }
   }
   
   @media (max-width: 576px) {
@@ -311,6 +314,9 @@
           z-index: 20;
           /* Ensure the typewriter text is on top */
           white-space: nowrap;
+      }
+      #services-row {
+          display: block;
       }
   }
   
