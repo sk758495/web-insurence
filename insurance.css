@@ -292,8 +292,11 @@
       .service-item {
           margin-bottom: 30px;
       }
-      .services h2 {
-          font-size: 2rem;
+      .service-item {
+          margin-bottom: 30px;
+      }
+      .services {
+          margin-top: 50px;
       }
       .contact h2 {
           font-size: 2rem;
@@ -334,6 +337,9 @@
       .cta-btn {
           padding: 10px 20px;
           font-size: 1rem;
+      }
+      .services {
+          margin-top: 50px;
       }
       .services h2 {
           font-size: 1.8rem;
