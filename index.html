@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web4Design</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        /* Basic Reset */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Body Background & Font */
+        
+        body {
+            background: linear-gradient(135deg, #f06, #4a90e2);
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+        }
+        /* Centering Content */
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        /* Styling the Links to Look Like Buttons */
+        
+        .btn-link {
+            display: inline-block;
+            font-size: 18px;
+            font-weight: bold;
+            background: #ff6347;
+            padding: 12px 30px;
+            margin: 10px 0;
+            color: white;
+            border-radius: 25px;
+            text-transform: uppercase;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-link:hover {
+            background-color: #d9534f;
+            transform: scale(1.1);
+        }
+        /* Responsive Design */
+        
+        @media (max-width: 768px) {
+            .container {
+                text-align: center;
+            }
+            .btn-link {
+                width: 80%;
+            }
+        }
+        /* Box Shadow on Hover for Links */
+        
+        .btn-link:active {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transform: translateY(4px);
+        }
+        /* Adding Smooth Transitions */
+        
+        .container {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        /* Aesthetic Improvement: Background Overlay */
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Background Overlay -->
+    <div class="overlay"></div>
+
+    <div class="container">
+        <h1 class="display-4 text-center mb-4">Welcome to Web4Design</h1>
+
+        <!-- Links Styled as Buttons -->
+        <a href="website-development.html" class="btn-link">Website Development</a>
+        <a href="insurance.html" class="btn-link">Life Insurance</a>
+    </div>
+
+    <!-- Bootstrap JS (with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,366 @@
+  /* Custom CSS */
+  
+  body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      transition: background-color 0.3s ease-in-out;
+  }
+  /* Apply blur effect to entire page */
+  
+  .blurred {
+      filter: blur(5px);
+      pointer-events: none;
+  }
+  /* Add stylish shading effect to the page */
+  
+  .shaded {
+      background: rgba(0, 0, 0, 0.5);
+      transition: background 1s ease;
+  }
+  /* Navbar */
+  
+  .navbar {
+      background-color: #0066cc;
+  }
+  
+  .navbar-brand {
+      color: #fff !important;
+      font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link {
+      color: #fff;
+      margin-right: 15px;
+  }
+  
+  .navbar-nav .nav-link:hover {
+      color: #ffcc00;
+  }
+  /* Hero Section */
+  
+  .hero {
+      height: 100vh;
+      /* Make sure the hero section takes full viewport height */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      position: relative;
+      z-index: 10;
+      opacity: 1;
+      transition: opacity 1s ease-out;
+      display: block;
+      img {
+          width: 1530px;
+          height: 100vh;
+      }
+  }
+  /* Center the hero content */
+  
+  .cta-btn {
+      background-color: #ffcc00;
+      color: #333;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      margin-top: -50px;
+  }
+  
+  .cta-btn:hover {
+      background-color: #ff9900;
+  }
+  /* Typewriter Text */
+  
+  .typewriter-text {
+      font-size: 4rem;
+      font-weight: bold;
+      color: #ffcc00;
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 1;
+      z-index: 20;
+      /* Ensure the typewriter text is on top */
+      white-space: nowrap;
+  }
+  /* Fade out effect for typewriter text */
+  
+  .fade-out {
+      animation: fadeOutText 1s forwards;
+  }
+  
+  @keyframes fadeOutText {
+      0% {
+          opacity: 1;
+      }
+      100% {
+          opacity: 0;
+          display: none;
+      }
+  }
+  
+  @keyframes fadeInUp {
+      0% {
+          opacity: 0;
+          transform: translateY(20px);
+      }
+      100% {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+  /* Services Section */
+  /* Services Section */
+  
+  .services {
+      padding: 100px 0;
+      /* Increase padding on top and bottom */
+      text-align: center;
+      position: relative;
+      z-index: 5;
+      background-color: #f9f9f9;
+      margin-top: 60px;
+      /* Space above the section */
+  }
+  
+  .services h2 {
+      font-size: 3.5rem;
+      /* Increase the font size for better emphasis */
+      font-weight: 700;
+      margin-bottom: 60px;
+      /* More space below the heading */
+      color: #333;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-family: 'Arial', sans-serif;
+  }
+  
+  .service-item {
+      margin-bottom: 50px;
+      /* Increase space between service items */
+      background: #fff;
+      padding: 40px;
+      /* Increase padding inside each service item */
+      border-radius: 12px;
+      /* Rounder corners */
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      margin-left: auto;
+      /* Center the content */
+      margin-right: auto;
+  }
+  
+  .service-item:hover {
+      transform: translateY(-12px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  }
+  
+  .service-item i {
+      font-size: 4.5rem;
+      /* Increase icon size */
+      color: #0066cc;
+      margin-bottom: 25px;
+      /* More space between icon and title */
+      transition: color 0.3s ease;
+  }
+  
+  .service-item:hover i {
+      color: #ff6600;
+      /* Change icon color on hover */
+  }
+  
+  .service-item h4 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      /* More space between title and description */
+      color: #333;
+      transition: color 0.3s ease;
+  }
+  
+  .service-item p {
+      font-size: 1.2rem;
+      /* Increase the size of the text slightly */
+      color: #777;
+      line-height: 1.6;
+      /* Increase line-height for better readability */
+      transition: color 0.3s ease;
+  }
+  
+  .service-item:hover h4,
+  .service-item:hover p {
+      color: #333;
+  }
+  /* Add space between rows */
+  
+  .row {
+      margin-left: -15px;
+      margin-right: -15px;
+  }
+  
+  .col-md-4 {
+      padding-left: 15px;
+      padding-right: 15px;
+  }
+  
+  @media (max-width: 768px) {
+      .service-item {
+          margin-bottom: 60px;
+          /* More space on smaller screens */
+          padding: 35px;
+          /* More padding for a spacious feel */
+      }
+      .services h2 {
+          font-size: 2.5rem;
+          /* Adjust heading size */
+          margin-bottom: 50px;
+          /* Space below heading */
+      }
+  }
+  
+  @media (max-width: 576px) {
+      .services h2 {
+          font-size: 2rem;
+          /* Smaller font size for small screens */
+      }
+      .service-item {
+          padding: 30px;
+          margin-bottom: 40px;
+          /* Keep good spacing */
+      }
+  }
+  
+  .contact {
+      padding: 60px 0;
+      text-align: center;
+      background-color: #0066cc;
+      color: white;
+  }
+  
+  .contact h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+  }
+  
+  .contact p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+  }
+  
+  .contact-btn {
+      background-color: #ffcc00;
+      color: #333;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border-radius: 50px;
+      text-decoration: none;
+  }
+  
+  .contact-btn:hover {
+      background-color: #ff9900;
+  }
+  /* Responsive Design */
+  
+  @media (max-width: 768px) {
+      .hero {
+          height: 30vh;
+          img {
+              width: 408px;
+              height: 30vh;
+          }
+      }
+      .hero h1 {
+          font-size: 2.5rem;
+      }
+      .hero p {
+          font-size: 1rem;
+      }
+      .cta-btn {
+          padding: 12px 25px;
+          font-size: 1rem;
+      }
+      .service-item {
+          margin-bottom: 30px;
+      }
+      .services h2 {
+          font-size: 2rem;
+      }
+      .contact h2 {
+          font-size: 2rem;
+      }
+      .contact-btn {
+          font-size: 1rem;
+          padding: 12px 25px;
+      }
+      .typewriter-text {
+          font-size: 2rem;
+          font-weight: bold;
+          color: #ffcc00;
+          position: absolute;
+          top: 20%;
+          left: 50%;
+          transform: translateX(-50%);
+          opacity: 1;
+          z-index: 20;
+          /* Ensure the typewriter text is on top */
+          white-space: nowrap;
+      }
+  }
+  
+  @media (max-width: 480px) {
+      .hero {
+          height: 30vh;
+          img {
+              width: 408px;
+              height: 30vh;
+          }
+      }
+      .hero h1 {
+          font-size: 2rem;
+      }
+      .cta-btn {
+          padding: 10px 20px;
+          font-size: 1rem;
+      }
+      .services h2 {
+          font-size: 1.8rem;
+      }
+      .service-item h4 {
+          font-size: 1.2rem;
+      }
+      .contact h2 {
+          font-size: 1.8rem;
+      }
+      .typewriter-text {
+          font-size: 2rem;
+          font-weight: bold;
+          color: #ffcc00;
+          position: absolute;
+          top: 20%;
+          left: 50%;
+          transform: translateX(-50%);
+          opacity: 1;
+          z-index: 20;
+          /* Ensure the typewriter text is on top */
+          white-space: nowrap;
+      }
+  }
+  
+  .navbar-nav .nav-link {
+      color: #fff !important;
+      /* White text */
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+      /* Text shadow for better readability */
+  }
+  
+  .navbar-nav .nav-link:hover {
+      color: #ffcc00 !important;
+      /* Change to a golden color on hover */
+  }
