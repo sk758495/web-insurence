@@ -414,3 +414,107 @@
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       /* Smooth transition for zoom and shadow */
   }
+  /* Add custom media query to keep the layout consistent on mobile */
+  
+  @media (max-width: 767px) {
+      .about-section .container .row {
+          display: flex;
+          flex-direction: row-reverse;
+          /* To make sure the image stays on the right side */
+      }
+      .about-section .col-sm-12 {
+          order: 0;
+          /* Ensure the title remains on the left and image remains on the right */
+      }
+      .about-section .col-sm-12 img {
+          max-height: 300px;
+          /* Adjust image height for smaller screens */
+      }
+      .about-title {
+          font-size: 2rem;
+          /* Adjust title font size for mobile */
+      }
+      .about-description {
+          font-size: 1rem;
+          /* Adjust description font size for mobile */
+      }
+  }
+  /* General Footer Styles */
+  
+  footer {
+      background-color: #2c3e50;
+  }
+  
+  footer h4 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #fff;
+      text-transform: uppercase;
+  }
+  
+  .footer-info,
+  .contact-link,
+  .footer-link {
+      color: #bbb;
+      font-size: 1rem;
+      transition: color 0.3s ease-in-out;
+  }
+  
+  .footer-link:hover,
+  .contact-link:hover {
+      color: #0066cc;
+      text-decoration: underline;
+  }
+  
+  .social-icons {
+      margin-top: 20px;
+  }
+  
+  .social-icon {
+      color: #fff;
+      font-size: 2rem;
+      margin: 0 15px;
+      transition: transform 0.3s ease-in-out;
+  }
+  
+  .social-icon:hover {
+      transform: scale(1.2);
+      color: #0066cc;
+  }
+  
+  .social-icon:active {
+      color: #2064a7;
+  }
+  /* Responsive Styles */
+  
+  @media (max-width: 768px) {
+      .social-icons {
+          text-align: center;
+          margin-top: 10px;
+      }
+      .footer-info {
+          font-size: 0.9rem;
+      }
+      footer h4 {
+          font-size: 1.4rem;
+      }
+      .social-icon {
+          margin: 0 10px;
+      }
+  }
+  
+  @media (max-width: 480px) {
+      footer h4 {
+          font-size: 1.2rem;
+      }
+      .footer-info,
+      .contact-link,
+      .footer-link {
+          font-size: 0.9rem;
+      }
+      .social-icon {
+          font-size: 1.8rem;
+          margin: 0 8px;
+      }
+  }

@@ -64,7 +64,7 @@
             <div class="row align-items-center">
                 <!-- Left Side - Title and Small Title with new animation effect -->
                 <div class="col-lg-6 col-md-6 col-sm-12" data-aos="zoom-in-up" data-aos-delay="100">
-                    <h6 class="display-5 fw-bold text-dark mb-3 about-title" style="font-size: 2.5rem;">The Importance of Insurance for Your Future</h6>
+                    <h6 class="display-6 fw-bold text-dark mb-3 about-title" style="font-size: 2.5rem;">The Importance of Insurance for Your Future</h6>
                     <p class="lead text-muted about-description" style="font-size: 1.1rem; line-height: 1.8;">
                         Insurance is essential for protecting your loved ones and securing your financial future. Whether it's life, health, or retirement planning, LIC offers reliable solutions to help you manage risks and stay prepared for life’s uncertainties. Protect what
                         matters most today, for a safer tomorrow.
@@ -77,11 +77,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Hover Effect CSS -->
-    <style>
-
-    </style>
 
 
 
@@ -112,17 +107,55 @@
         </div>
     </div>
 
-
-
-
-
-
     <!-- Contact Section -->
     <div id="contact" class="contact">
         <h2>Contact Us Today</h2>
         <p>Get in touch for a personalized consultation.</p>
         <a href="mailto:info@insuranceadvisor.com" class="contact-btn">Contact Us</a>
     </div>
+
+
+    <!-- Footer Section -->
+    <footer id="footer" class="bg-dark text-white py-5">
+        <div class="container text-center">
+            <div class="row">
+                <!-- Footer Column 1 - Company Info -->
+                <div class="col-md-4 mb-4">
+                    <h4>Company Info</h4>
+                    <p class="footer-info">
+                        Your trusted insurance advisor, ensuring your future is secured.
+                    </p>
+                </div>
+                <!-- Footer Column 2 - Quick Links -->
+                <div class="col-md-4 mb-4">
+                    <h4>Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#about" class="footer-link">About Us</a></li>
+                        <li><a href="#services" class="footer-link">Services</a></li>
+                        <li><a href="#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Footer Column 3 - Contact -->
+                <div class="col-md-4 mb-4">
+                    <h4>Contact</h4>
+                    <p>Feel free to reach out for personalized consultations!</p>
+                    <a href="mailto:info@insuranceadvisor.com" class="contact-link">info@insuranceadvisor.com</a>
+                </div>
+            </div>
+
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="text-center py-3" style="background-color: #222;">
+            <p>&copy; 2024 Dharmendra Kumar. All rights reserved.</p>
+        </div>
+    </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
@@ -142,36 +175,6 @@
         });
     </script>
 
-    <style>
-        /* Hover Effect for Title */
-        
-        .about-title:hover {
-            color: #007bff;
-            /* Change text color on hover */
-            transition: color 0.3s ease-in-out;
-            /* Smooth transition for color change */
-        }
-        /* Hover Effect for Description */
-        
-        .about-description:hover {
-            color: #555;
-            /* Slightly darker text color on hover */
-            transform: translateY(-5px);
-            /* Text moves up slightly */
-            transition: color 0.3s ease, transform 0.3s ease;
-            /* Smooth transition for color and movement */
-        }
-        /* Hover Effect for Image */
-        
-        .hover-effect:hover {
-            transform: scale(1.05);
-            /* Zoom in the image slightly */
-            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
-            /* Add a blue shadow on hover */
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            /* Smooth transition for zoom and shadow */
-        }
-    </style>
 
 
     <script>
@@ -210,6 +213,45 @@
         };
     </script>
 
+    <!--footer-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Hover effect for social media icons
+            const socialIcons = document.querySelectorAll('.social-icon');
+            socialIcons.forEach(function(icon) {
+                icon.addEventListener('mouseover', function() {
+                    icon.style.transform = 'scale(1.2)';
+                });
+                icon.addEventListener('mouseout', function() {
+                    icon.style.transform = 'scale(1)';
+                });
+            });
+
+            // Fade in the footer when it enters the viewport
+            const footer = document.getElementById('footer');
+            window.addEventListener('scroll', function() {
+                const footerPosition = footer.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight;
+
+                if (footerPosition < screenPosition) {
+                    footer.classList.add('fade-in');
+                }
+            });
+
+            // Adding fade-in animation class dynamically
+            const style = document.createElement('style');
+            style.innerHTML = `
+                @keyframes fadeIn {
+                    0% { opacity: 0; }
+                    100% { opacity: 1; }
+                }
+                .fade-in {
+                    animation: fadeIn 1s ease-out;
+                }
+            `;
+            document.head.appendChild(style);
+        });
+    </script>
 
 
 </body>
