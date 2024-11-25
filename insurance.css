@@ -376,10 +376,6 @@
       color: #ffcc00 !important;
       /* Change to a golden color on hover */
   }
-  
-  #about {
-      margin-top: 50px;
-  }
   /* Ensure these styles are loaded properly and no conflicts */
   /* Hover Effect for Title */
   
@@ -516,5 +512,76 @@
       .social-icon {
           font-size: 1.8rem;
           margin: 0 8px;
+      }
+  }
+  /* Info Section Styling */
+  
+  .info-section {
+      background-color: #f8f9fa;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+  }
+  /* Image container with hover effect */
+  
+  .image-container {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  /* Hover effect on image */
+  
+  .image-container img {
+      transition: transform 0.5s ease, filter 0.3s ease;
+  }
+  
+  .image-container:hover img {
+      transform: scale(1.1);
+      filter: brightness(0.8);
+  }
+  /* Content box styling */
+  
+  .content-box {
+      background-color: #ffffff;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+  }
+  /* Heading Style */
+  
+  .experience h3 {
+      font-size: 1.8rem;
+      color: #0062cc;
+      font-weight: 600;
+      letter-spacing: 1px;
+  }
+  /* List Style */
+  
+  .experience ul {
+      list-style: none;
+      padding-left: 0;
+  }
+  
+  .experience li {
+      font-size: 1.1rem;
+      color: #333;
+      line-height: 1.6;
+  }
+  
+  .experience li strong {
+      color: #0062cc;
+      font-weight: bold;
+  }
+  /* Responsive Design */
+  
+  @media (max-width: 767px) {
+      .info-section {
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+      }
+      .experience h3 {
+          font-size: 1.5rem;
+      }
+      .image-container img {
+          border-radius: 10px;
       }
   }

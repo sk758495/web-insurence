@@ -13,6 +13,109 @@
         body {
             font-family: 'Poppins', sans-serif;
         }
+        /*   <!-- Info Section Styling -->*/
+        
+        .info-section {
+            background-color: #f8f9fa;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+        /* Image container with parallax effect */
+        
+        .image-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            height: 400px;
+            /* Set height for the parallax image */
+        }
+        /* Parallax effect on image */
+        
+        .parallax-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        /* Parallax Scrolling Effect */
+        
+        .parallax-img {
+            transform: translateY(0);
+            will-change: transform;
+        }
+        /* Parallax scrolling on scroll */
+        
+        .image-container {
+            overflow: hidden;
+        }
+        
+        .image-container img {
+            transition: transform 0.5s ease;
+        }
+        
+        .image-container img {
+            transform: translateY(0);
+            transition: transform 0.5s ease;
+        }
+        /* Add parallax effect */
+        
+        .image-container img[data-aos="fade-up"] {
+            transform: translateY(10%);
+        }
+        
+        .image-container img[data-aos="fade-up"]:hover {
+            transform: scale(1.1);
+        }
+        /* Content box styling */
+        
+        .content-box {
+            background-color: #ffffff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        /* Heading Style */
+        
+        .experience h3 {
+            font-size: 1.8rem;
+            color: #0062cc;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        /* List Style */
+        
+        .experience ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .experience li {
+            font-size: 1.1rem;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .experience li strong {
+            color: #0062cc;
+            font-weight: bold;
+        }
+        /* AOS Animation Customization */
+        
+        @media (max-width: 767px) {
+            .info-section {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+            .experience h3 {
+                font-size: 1.5rem;
+            }
+            .image-container img {
+                border-radius: 10px;
+            }
+        }
     </style>
 </head>
 
@@ -56,30 +159,6 @@
         </div>
     </div>
 
-
-
-    <!-- Section to display Image on the right and Title on the left -->
-    <div id="about" class="about-section py-5" style="background-color: #f7f7f7;">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- Left Side - Title and Small Title with new animation effect -->
-                <div class="col-lg-6 col-md-6 col-sm-12" data-aos="zoom-in-up" data-aos-delay="100">
-                    <h6 class="display-6 fw-bold text-dark mb-3 about-title" style="font-size: 2.5rem;">The Importance of Insurance for Your Future</h6>
-                    <p class="lead text-muted about-description" style="font-size: 1.1rem; line-height: 1.8;">
-                        Insurance is essential for protecting your loved ones and securing your financial future. Whether it's life, health, or retirement planning, LIC offers reliable solutions to help you manage risks and stay prepared for life’s uncertainties. Protect what
-                        matters most today, for a safer tomorrow.
-                    </p>
-                </div>
-                <!-- Right Side - Image with zoom-in effect -->
-                <div class="col-lg-6 col-md-6 col-sm-12" data-aos="zoom-in-left" data-aos-delay="200">
-                    <img src="images/banner1.png" alt="Explore Services" class="img-fluid rounded-lg shadow-lg hover-effect" style="max-height: 400px; object-fit: cover; border: 3px solid #e3e3e3;">
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
     <!-- Services Section -->
     <div id="services" class="services">
         <div class="container">
@@ -102,6 +181,63 @@
                     <i class="bi bi-briefcase"></i>
                     <h4>Health Plan</h4>
                     <p>Stay covered with comprehensive health plans that ensure you have access to quality medical care when needed.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="info-section py-0">
+        <div class="container py-0">
+            <!-- Left side image with parallax effect -->
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="image-container" data-aos="fade-up" data-aos-delay="100">
+                        <img src="images/carousel-2.jpg" alt="LIC Company" class="img-fluid rounded shadow-lg parallax-img">
+                    </div>
+                </div>
+
+                <!-- Right side text content -->
+                <div class="col-md-6">
+                    <div class="content-box p-4 rounded bg-light shadow-sm" data-aos="fade-up" data-aos-delay="200">
+                        <!-- Highlight Experience -->
+                        <div class="experience">
+                            <h3 class="text-primary mb-4">Our Expertise</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <strong>13+ Years of Experience:</strong> Serving as trusted police advisors for over a decade.
+                                </li>
+                                <li class="mb-3">
+                                    <strong>Professional Advisory:</strong> Providing expert advice to law enforcement agencies on safety and security strategies.
+                                </li>
+                                <li class="mb-3">
+                                    <strong>Proven Track Record:</strong> Our experience has led to numerous successful outcomes in crime prevention and law enforcement operations.
+                                </li>
+                                <li class="mb-3">
+                                    <strong>Innovative Solutions:</strong> Offering innovative, tailored advisory services to meet the unique needs of police departments and communities.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section to display Image on the right and Title on the left -->
+    <div id="about" class="about-section py-5" style="background-color: #f7f7f7;">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Side - Title and Small Title with new animation effect -->
+                <div class="col-lg-6 col-md-6 col-sm-12" data-aos="zoom-in-up" data-aos-delay="100">
+                    <h6 class="display-6 fw-bold text-dark mb-3 about-title" style="font-size: 2.5rem;">The Importance of Insurance for Your Future</h6>
+                    <p class="lead text-muted about-description" style="font-size: 1.1rem; line-height: 1.8;">
+                        Insurance is essential for protecting your loved ones and securing your financial future. Whether it's life, health, or retirement planning, LIC offers reliable solutions to help you manage risks and stay prepared for life’s uncertainties. Protect what
+                        matters most today, for a safer tomorrow.
+                    </p>
+                </div>
+                <!-- Right Side - Image with zoom-in effect -->
+                <div class="col-lg-6 col-md-6 col-sm-12" data-aos="zoom-in-left" data-aos-delay="200">
+                    <img src="images/banner1.png" alt="Explore Services" class="img-fluid rounded-lg shadow-lg hover-effect" style="max-height: 400px; object-fit: cover; border: 3px solid #e3e3e3;">
                 </div>
             </div>
         </div>
