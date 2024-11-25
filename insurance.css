@@ -584,4 +584,16 @@
       .image-container img {
           border-radius: 10px;
       }
+      #advice-img {
+          width: auto;
+          /* Ensures the image takes up the full width of the container */
+          height: auto;
+          /* Ensures the image takes up the full height of the container */
+          object-fit: cover;
+          /* Ensures the image covers the container without distortion */
+      }
+      .image-container {
+          height: 220px;
+          margin-bottom: 10px;
+      }
   }
