@@ -430,13 +430,14 @@
           font-size: 2rem;
           /* Adjust title font size for mobile */
       }
+      .about-title:hover {
+          color: #59718b !important;
+          /* Blue color on hover */
+          transition: color 0.3s ease-in-out;
+          /* Smooth transition for color change */
+      }
       .about-description {
           font-size: 1rem;
-          /* Adjust description font size for mobile */
-      }
-      .about-description:hover {
-          font-size: 1rem;
-          color: #007bff !important;
           /* Adjust description font size for mobile */
       }
   }
