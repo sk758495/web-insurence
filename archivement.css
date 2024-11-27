@@ -222,6 +222,65 @@
           /* Adjust image height on mobile */
       }
   }
+  /* Heading Style */
+  
+  h2.text-center {
+      font-family: 'Arial', sans-serif;
+      /* Modern, clean font */
+      font-size: 36px;
+      /* Larger font size */
+      font-weight: bold;
+      /* Make the heading bold */
+      color: #2c3e50;
+      /* Dark, professional color */
+      letter-spacing: 2px;
+      /* Slight spacing between letters for readability */
+      text-transform: uppercase;
+      /* Make text uppercase */
+      text-align: center;
+      /* Center align the heading */
+      margin-bottom: 30px;
+      /* Add some space below the heading */
+      position: relative;
+  }
+  /* Add a subtle underline effect with animation */
+  
+  h2.text-center::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 60px;
+      /* Width of the underline */
+      height: 5px;
+      /* Height of the underline */
+      background-color: #3498db;
+      /* Underline color */
+      transform: translateX(-50%);
+      /* Center the underline */
+      animation: underlineAnimation 0.6s ease-in-out;
+  }
+  /* Underline animation */
+  
+  @keyframes underlineAnimation {
+      0% {
+          width: 0;
+      }
+      50% {
+          width: 60px;
+      }
+      100% {
+          width: 60px;
+      }
+  }
+  /* Spacing adjustments for larger screens */
+  
+  @media (min-width: 768px) {
+      h2.text-center {
+          font-size: 38px;
+          /* Increas font size for larger screens */
+      }
+  }
   /* Gallery container */
   
   .gallery-container {
