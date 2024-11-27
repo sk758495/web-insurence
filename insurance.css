@@ -428,6 +428,7 @@
       }
       .about-title {
           font-size: 2rem;
+          color: #007bff !important;
           /* Adjust title font size for mobile */
       }
       .about-title:hover {
