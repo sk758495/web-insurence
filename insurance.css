@@ -434,6 +434,11 @@
           font-size: 1rem;
           /* Adjust description font size for mobile */
       }
+      .about-description:hover {
+          font-size: 1rem;
+          color: #007bff !important;
+          /* Adjust description font size for mobile */
+      }
   }
   /* General Footer Styles */
   
