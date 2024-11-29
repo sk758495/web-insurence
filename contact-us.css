@@ -45,6 +45,8 @@ body {
 
 footer {
     background-color: #2c3e50;
+    position: relative;
+    padding-top: 60px;
 }
 
 footer h4 {
@@ -162,7 +164,7 @@ footer h4 {
 @media (max-width: 768px) {
     .hero {
         position: relative;
-        height: 100vh;
+        height: 150vh;
         display: block;
         justify-content: center;
         align-items: center;
@@ -171,42 +173,125 @@ footer h4 {
         background-image: url('images/contact-us-banner.png');
         background-size: cover;
         background-position: center;
-        background-attachment: fixed;
+        background-attachment: scroll;
+        /* Change to scroll for mobile devices */
         padding: 0 20px;
+    }
+    .hero-content {
+        padding: 15px;
     }
     .hero h1 {
         font-size: 2rem;
+        /* Reduced font size for mobile */
+        margin-bottom: 15px;
+        margin-top: 100px;
     }
     .hero p {
         font-size: 1rem;
+        /* Smaller paragraph text on mobile */
     }
 }
 
 
 /* Contact Form */
 
+
+/* Contact Form Styles for Mobile Devices */
+
 #contact-form {
-    padding: 60px 0;
+    padding: 30px 15px;
+    /* Reduce padding for mobile */
     background-color: transparent;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: left;
+    margin-top: 60px;
+    /* Space between the form and the navbar */
+    margin-bottom: 80px;
+    /* Add bottom margin to ensure form is not hidden by the footer */
 }
 
+
+/* Make form fields full-width on mobile */
+
 #contact-form .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
+
+#contact-form .form-group input,
+#contact-form .form-group textarea {
+    width: 100%;
+    /* Full width on mobile */
+    padding: 12px 15px;
+    /* Increase padding for better touch interaction */
+    font-size: 1rem;
+    /* Increase font size for readability */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    /* Add border for better visibility */
+}
+
+
+/* Adjust button size on mobile */
 
 #contact-form button {
     background-color: #0066cc;
     border: none;
     color: white;
     font-size: 1.1rem;
-    padding: 10px 20px;
+    padding: 12px 25px;
+    /* Larger button for easier click on mobile */
     border-radius: 5px;
+    width: 100%;
+    /* Make button full-width on mobile */
     cursor: pointer;
 }
 
 #contact-form button:hover {
     background-color: #ffcc00;
+}
+
+
+/* Media Query for smaller devices (max-width: 768px) */
+
+@media (max-width: 768px) {
+    #contact-form {
+        padding: 25px 10px;
+        /* Reduce padding for better fit on small screens */
+    }
+    #contact-form .form-row {
+        flex-direction: column;
+        /* Stack form fields vertically */
+    }
+    #contact-form .form-group {
+        margin-bottom: 20px;
+        /* Increased space between fields */
+    }
+    #contact-form button {
+        width: 100%;
+        /* Full-width button */
+        font-size: 1.1rem;
+        /* Adjust font size for better readability */
+        padding: 12px 20px;
+        /* Larger touch-friendly button */
+    }
+    #contact-form input,
+    #contact-form textarea {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #contact-form {
+        padding: 25px 10px;
+        /* Reduced padding for mobile */
+        margin-bottom: 120px;
+        /* Increase bottom margin on smaller screens */
+    }
+    footer {
+        position: relative;
+        /* Ensure footer stays in place */
+        padding-bottom: 40px;
+        /* Space at the bottom of the footer */
+    }
 }
