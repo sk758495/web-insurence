@@ -321,9 +321,6 @@
       #services-row {
           display: block;
       }
-      #heading-cons {
-          margin-top: 100px;
-      }
   }
   
   @media (max-width: 480px) {
@@ -365,9 +362,6 @@
           z-index: 20;
           /* Ensure the typewriter text is on top */
           white-space: nowrap;
-      }
-      #heading-cons {
-          margin-top: 100px;
       }
   }
   
